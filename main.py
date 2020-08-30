@@ -3,15 +3,8 @@ import requests
 import json
 import pandas 
 from bs4 import BeautifulSoup
-from os.path import dirname, join
 
 session = requests.Session()
-
-current_dir = dirname(__file__)
-file_path = join(current_dir, "./result/category-product/")
-
-def bs_version():
-    print(BeautifulSoup.__version__)
 
 def get_category_url():
 
